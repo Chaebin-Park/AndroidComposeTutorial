@@ -1,11 +1,10 @@
-package com.zinnotec.composetutorial
+package com.zinnotech.composetutorial
 
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.annotation.UiThread
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.animateContentSize
 import androidx.compose.foundation.Image
@@ -27,7 +26,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.zinnotec.composetutorial.ui.theme.ComposeTutorialTheme
+import com.zinnotech.composetutorial.ui.theme.ComposeTutorialTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,11 +37,6 @@ class MainActivity : ComponentActivity() {
                 Conversation(msgs = SampleData.conversationSample)
             }
         }
-    }
-
-    fun startNextActivity() {
-        val intent = Intent(applicationContext, NextActivity::class.java)
-        startActivity(intent)
     }
 }
 
@@ -99,7 +93,7 @@ fun Conversation(msgs: List<Message>) {
 
     Column() {
         Button(onClick = {
-            context.startActivity(Intent(context, NextActivity::class.java))
+            context.startActivity(Intent(context, SecondActivity::class.java))
         },
         modifier = Modifier
             .fillMaxWidth(1f)

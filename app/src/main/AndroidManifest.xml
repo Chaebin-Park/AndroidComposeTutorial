@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zinnotec.composetutorial">
+    package="com.zinnotech.composetutorial">
 
     <application
         android:allowBackup="true"
@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComposeTutorial">
         <activity
-            android:name=".NextActivity"
+            android:name=".ThirdActivity"
             android:exported="false"
-            android:label="@string/title_activity_next"
+            android:label="@string/title_activity_third"
+            android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
+        <activity android:name=".SecondActivity"
+            android:exported="false"
+            android:label="@string/title_activity_second"
             android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
         <activity
             android:name=".MainActivity"

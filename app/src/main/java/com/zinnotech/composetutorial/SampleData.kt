@@ -1,6 +1,4 @@
-package com.zinnotec.composetutorial
-
-import com.zinnotec.composetutorial.Message
+package com.zinnotech.composetutorial
 
 object SampleData {
     // Sample conversation data

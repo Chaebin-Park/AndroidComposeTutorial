@@ -1,4 +1,4 @@
-package com.zinnotec.composetutorial
+package com.zinnotech.composetutorial
 
 import org.junit.Test
 

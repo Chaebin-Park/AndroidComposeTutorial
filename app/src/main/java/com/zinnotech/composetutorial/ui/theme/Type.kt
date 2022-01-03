@@ -1,4 +1,4 @@
-package com.zinnotec.composetutorial.ui.theme
+package com.zinnotech.composetutorial.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
